@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\97523\\Desktop\\mvc\\LanchesMac\\LanchesMac\\wwwroot\\images\\lanche1.jpg",
+      "PackagePath": "staticwebassets\\images\\lanche1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\97523\\Desktop\\mvc\\LanchesMac\\LanchesMac\\wwwroot\\images\\lanche2.jpg",
+      "PackagePath": "staticwebassets\\images\\lanche2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\97523\\Desktop\\mvc\\LanchesMac\\LanchesMac\\wwwroot\\images\\lanche3.jpg",
+      "PackagePath": "staticwebassets\\images\\lanche3.jpg"
+    },
+    {
       "Id": "C:\\Users\\97523\\Desktop\\mvc\\LanchesMac\\LanchesMac\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
