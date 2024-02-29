@@ -4,7 +4,7 @@
 
 namespace LanchesMac.Migrations
 {
-    public partial class MigracaoInicial : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
