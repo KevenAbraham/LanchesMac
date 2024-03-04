@@ -1,5 +1,5 @@
 ﻿using LanchesMac.Repositories.Interfaces;
-using LanchesMac.ViewModel;
+using LanchesMac.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanchesMac.Controllers
