@@ -4,6 +4,7 @@ using LanchesMac.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LanchesMac.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240311115922_PedidoDetalhes")]
+    partial class PedidoDetalhes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,7 +46,7 @@ namespace LanchesMac.Migrations
 
                     b.HasIndex("LancheId");
 
-                    b.ToTable("CarrinhoCompraItens", (string)null);
+                    b.ToTable("CarrinhoCompraItens");
                 });
 
             modelBuilder.Entity("LanchesMac.Models.Categoria", b =>
@@ -67,7 +69,7 @@ namespace LanchesMac.Migrations
 
                     b.HasKey("CategoriaId");
 
-                    b.ToTable("Categorias", (string)null);
+                    b.ToTable("Categorias");
                 });
 
             modelBuilder.Entity("LanchesMac.Models.Lanche", b =>
@@ -117,7 +119,7 @@ namespace LanchesMac.Migrations
 
                     b.HasIndex("CategoriaId");
 
-                    b.ToTable("Lanches", (string)null);
+                    b.ToTable("Lanches");
                 });
 
             modelBuilder.Entity("LanchesMac.Models.Pedido", b =>
@@ -185,7 +187,7 @@ namespace LanchesMac.Migrations
 
                     b.HasKey("PedidoId");
 
-                    b.ToTable("Pedidos", (string)null);
+                    b.ToTable("Pedidos");
                 });
 
             modelBuilder.Entity("LanchesMac.Models.PedidoDetalhe", b =>
@@ -214,7 +216,7 @@ namespace LanchesMac.Migrations
 
                     b.HasIndex("PedidoId");
 
-                    b.ToTable("PedidoDetalhe", (string)null);
+                    b.ToTable("PedidoDetalhe");
                 });
 
             modelBuilder.Entity("LanchesMac.Models.CarrinhoCompraItem", b =>
